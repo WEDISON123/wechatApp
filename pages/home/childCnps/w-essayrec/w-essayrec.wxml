@@ -1,0 +1,4 @@
+<!--pages/home/childCnps/w-essayrec/w-essayrec.wxml-->
+<view class="essay_list" wx:for="{{essay}}" wx:key="id">
+  <w-essayrec-item essayitem="{{item}}"></w-essayrec-item>
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-search": "./childCnps/w-search/w-search",
+    "w-tab-control": "./childCnps/w-tab-control/w-tab-control",
+    "w-essayhot": "./childCnps/w-essayhot/w-essayhot",
+    "w-essayrec": "./childCnps/w-essayrec/w-essayrec"
+  }
+}

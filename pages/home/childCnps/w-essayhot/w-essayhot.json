@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "w-essay-item": "/components/w-essay-item/w-essay-item"
+  }
+}

@@ -1,0 +1,53 @@
+/* components/w-essay-item/w-essay-item.wxss */
+.essay_list__heat {
+  display: flex;
+  margin-left: 0.8vh;
+}
+.essay_list__heat-ida {
+  height: 2.6vh;
+  width: 3.6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right ,#ffac14,#f0cd4a);
+  color: #ffffff;
+  font-size: 12pt;
+  border-radius: 0.5vh;
+  position: relative;
+  top: 0.38vh;
+}
+.essay_list__heat-idb {
+  height: 2.6vh;
+  width: 3.6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f3eb;
+  color: #b7ad6f;
+  font-size: 12pt;
+  border-radius: 0.5vh;
+  position: relative;
+  top: 0.38vh;
+}
+.essay_list__heat-h {
+  color: #d5d5d5;
+  font-size: 10pt;
+  margin-left: 1vh;
+  margin-top: 0.4vh;
+}
+
+.essay_list__title {
+  display: flex;
+}
+.essay_list__title-t{
+  width: 41vh;
+  padding: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.essay_list__title image {
+  width: 16vh;
+  height: 11.2vh;
+  border-radius: 2vh;
+}

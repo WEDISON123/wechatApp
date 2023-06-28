@@ -1,0 +1,26 @@
+<!--pages/home/home.wxml-->
+<view class="page">
+  <view class="search">
+    <w-search sizeData="{{sizeData}}"></w-search>
+  </view>
+  <view class="essay" style="height: {{sizeData.windowHeight - sizeData.navHeight}}px;">
+    <view class="essay_hd">
+      <w-tab-control bind:tabclick="tabclick" tab="{{tab}}"></w-tab-control>
+    </view>
+    <view class="essay_bd">
+      <view class="essay_bd__space"></view>
+      <swiper class="essay_bd__swiper" current="{{tab}}" bindchange="doTabChange">
+       <swiper-item>
+         <scroll-view scroll-y="ture" style="height: 100%;">
+           <w-essayhot essay="{{essay}}"></w-essayhot>
+         </scroll-view>
+       </swiper-item>
+       <swiper-item>
+         <scroll-view scroll-y="ture" style="height: 100%; background-color: #fafafa;">
+           <w-essayrec essay="{{essay2}}"></w-essayrec>
+         </scroll-view>
+       </swiper-item>
+      </swiper>
+    </view>
+  </view> 
+</view>

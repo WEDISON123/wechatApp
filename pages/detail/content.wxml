@@ -1,0 +1,22 @@
+<!--pages/detail/content.wxml-->
+<view class="detail">
+  <view class="search">
+    <w-search sizeData="{{sizeData}}"></w-search>
+  </view>
+  <view wx:for="{{essay}}" wx:key="index">
+    <view wx:if="{{item.id == id}}">
+      <w-essay essay="{{item}}"></w-essay>
+    </view>
+  </view>
+  <view wx:for="{{rate}}" wx:key="index">
+    <view wx:if="{{item.iid[0] == id}}">
+      <view class="comment-card">
+        <image class="avatar" src="{{item.userimg}}"></image>
+          <text class="user-id">{{item.userid}}</text>
+        <view class="user-info">
+          <text class="comment-content">{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

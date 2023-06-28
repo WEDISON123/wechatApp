@@ -1,0 +1,10 @@
+<!--pages/detail/childCnps/w-detail_search/w-detail_search.wxml-->
+<view class="search-container" style="height: {{sizeData.navHeight}}px;">
+  <view class="search-input" style="height: {{sizeData.navHeight-sizeData.statusBarHeight}}px; padding-top: {{sizeData.statusBarHeight}}px;">
+    <view class="back_icon" style="height: {{sizeData.menuButtonObject.height*0.9}}px; width: {{sizeData.menuButtonObject.width*0.9}}px;  margin: 0 {{sizeData.navTop*0.6}}px;">
+      <view class="toBack" style="height: {{sizeData.menuButtonObject.height*0.9}}px; width: {{sizeData.menuButtonObject.width*0.45}}px;" bindtap="back"><image src="/images/back.png" mode=""/></view>
+      <view class="toHome" style="height: {{sizeData.menuButtonObject.height*0.9}}px; width: {{sizeData.menuButtonObject.width*0.45}}px;" bindtap="toHome"><image src="/images/tohome.png" mode=""/></view>
+    </view>
+    <input type="text" placeholder="{{hotTopic}}" style="height: {{sizeData.menuButtonObject.height}}px;"/>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+/* pages/home/childCnps/w-tab-control/w-tab-control.wxss */
+.tab {
+  height: 100%;
+  display: flex;
+}
+.tab_item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+.tab_item-on {
+  color: black;
+}

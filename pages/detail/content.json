@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-search": "./childCnps/w-detail_search/w-detail_search",
+    "w-essay": "./childCnps/w-detail_essay/w-detail_essay"
+  }
+}

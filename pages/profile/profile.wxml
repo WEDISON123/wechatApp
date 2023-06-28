@@ -1,0 +1,129 @@
+<!--pages/profile/profile.wxml-->
+<view class="page">
+  <view class="navigation" style="height: {{navHeight}}px;">
+    <view class="agreement" style="height: {{buttonHeight}}px; width: 83rpx; position: relative; top: {{buttonTop}}px;">
+      <view class="agreement_img" style="height: {{buttonHeight-8}}px; width: {{buttonHeight-8}}px;">
+        <image src="/images/agreement.png" mode=""/>
+      </view>
+    </view>
+  </view>
+  <view class="page_bd" style="height: {{windowHeight-navHeight}}px">
+    <view class="user">
+      <view class="userinfo">
+        <block wx:if="{{canIUseOpenData}}">
+          <view class="userinfo-avatar" bindtap="bindViewTap">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <open-data type="userNickName"></open-data>
+        </block>
+        <block wx:elif="{{!hasUserInfo}}">
+          <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+          <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+          <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+        </block>
+        <block wx:else>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+      </view>
+    </view>
+    <view class="{{showProblemA || showProblemB ? '' : 'problem'}}">
+      <view class="problem_nomal">常见问题</view>
+      <view class="problem_a">
+        <view class="problem_a__title">
+          购买后无法正常查看内容、找不到购买内容？
+        </view>
+        <view class="problem_img" bindtap="showChangeA">
+          <image src="/images/open.png" mode=""/>  
+        </view>
+        <view class="{{showProblemA ? 'problem_content' : 'problem_none'}}">
+          使用当前手机账号登入知乎App，在 [我的] - [已购] 中查看，或在知乎App内联系知乎小管家。
+        </view>
+      </view>
+      <view class="problem_b">
+        <view class="problem_b__title">
+          已购买会员如何取消订阅
+        </view>
+        <view class="problem_img" bindtap="showChangeB">
+          <image src="/images/open.png" mode=""/>  
+        </view>
+        <view class="{{showProblemB ? 'problem_content' : 'problem_none'}}">
+          您在小程序中购买的续费会员订单请您到进行支付的App中找到续费订单，解除续费。
+          微信支付可以在微信钱包的支付功能中关闭。
+          路径为：我——钱包——支付管理——自动扣费；
+        </view>
+      </view>
+    </view>
+    <view class="space"></view>
+    <view class="cs">
+      <view class="cs_title">
+        购买异常客服
+      </view>
+      <view class="cs_img">
+        <image src="/images/call.png" mode=""/>
+      </view>
+    </view>
+    <view class="space"></view>
+    <view class="history"> 
+      <view class="my">
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/eye.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的关注</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/star.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的收藏</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/draft.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的草稿</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/recent.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>最近浏览</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/book.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的书架</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/live.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的 Live</text>
+      </view>
+    </view>
+    <view class="my-item flex-wrp">
+      <view class="myitem-icon flex-item" >
+        <image src="../../images/zhi.png"></image>
+      </view>
+      <view class="myitem-name flex-item">
+        <text>我的值乎</text>
+      </view>
+    </view>
+
+  </view>
+    </view>
+  </view>
+</view>

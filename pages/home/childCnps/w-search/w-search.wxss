@@ -1,0 +1,14 @@
+/* pages/home/childCnps/w-search/w-search.wxss */
+.search-container {
+  background-color: #ffffff;
+  width: 100vw;
+}
+.search-input {
+  display: flex;
+  align-items: center;
+}
+.search-input input {
+  background-color: #f7f8fa;
+  border-radius: 16px;
+  text-align: center;
+}

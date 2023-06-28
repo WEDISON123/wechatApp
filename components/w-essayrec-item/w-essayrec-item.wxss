@@ -1,0 +1,25 @@
+/* components/w-essayrec-item/w-essayrec-item.wxss */
+.essay_list__title {
+  font-size: 32rpx;
+  color: #272727;
+  padding: 30rpx;
+}
+.essay_list__content {
+  display: flex;
+  padding: 0 30rpx;
+  padding-bottom: 30rpx;
+}
+.essay_list-content {
+  font-size: 28rpx;
+  color: #575757;
+}
+.essay_list__img {
+  width: 60vh;
+  height: 11.2vh;
+  border-radius: 2vh;
+  position: relative;
+  left: 15rpx;
+}
+.essay_list__img-null {
+  display: none;
+}

@@ -1,0 +1,6 @@
+<!--pages/home/childCnps/w-search/w-search.wxml-->
+<view class="search-container" style="height: {{sizeData.navHeight}}px;">
+  <view class="search-input" style="height: {{sizeData.navHeight-sizeData.statusBarHeight}}px; padding-top: {{sizeData.statusBarHeight}}px;">
+    <input type="text" placeholder="{{hotTopic}}" style="height: {{sizeData.menuButtonObject.height}}px; padding: 0 {{sizeData.navTop*2}}px; margin: 0 {{sizeData.navTop}}px;"/>
+  </view>
+</view>

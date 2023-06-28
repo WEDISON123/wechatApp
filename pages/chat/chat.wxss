@@ -1,0 +1,65 @@
+/* pages/chat/chat.wxss */
+.navbar{
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+}
+.navbar .text {
+  font-size: 16pt;
+  position: relative;
+  bottom: -4vh;
+  left: 40vw;
+}
+
+.chat{
+  padding-top: 10vh;
+}
+
+.chat-item{
+  width: 98vw;
+  height: 7vh;
+  background: #ffffff;
+  padding: 25rpx 25rpx 25rpx 0;
+  border-bottom: solid 1px #ebebeb;
+  display: flex;
+}
+.chat-item  image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+}
+.chat-item .avatar{
+  flex: 1;
+  padding-left: 2vw;
+}
+.chat-item .chat-content{
+  flex: 5;
+  text-align: left;
+}
+.chat-item .chat-content text{
+  /*display: block;*/
+}
+.chat-item .chat-content .chat-source{
+  color: #818A8F;
+  font-size: 28rpx;
+  padding: 4rpx 0 8rpx 0;
+}
+.chat-item .chat-content .chat-source .chatmate{
+  font-size: 34rpx;
+  color: #000000;
+  text-align: left;
+}
+.chat-item .chat-content .chat-source .lasttime{
+  flex: 1;
+  font-size: 22rpx;
+  float: right;
+  vertical-align: text-bottom;
+}
+.chat-item .chat-content .chat-txt{
+  display: block;
+  color: #7b7b7b;
+  font-size: 26rpx;
+  line-height: 34rpx;
+}

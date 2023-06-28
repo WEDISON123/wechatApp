@@ -1,0 +1,14 @@
+<!--pages/detail/childCnps/w-detail_essay/w-detail_essay.wxml-->
+<view class="detail-container">
+  <view class="detail h">
+    <view class="detail_essay">{{essay.title}}</view>
+    <view class="detail_content">{{essay.content}}</view>
+    <view class="detail_mess">
+      <view class="detail_mess__follow">{{number1}} 人关注</view>
+      <view class="detail_mess__watch">{{number2}} 万浏览</view>
+    </view>
+  </view>
+  <view class="space">
+    <view class="space-title">回答</view>
+  </view>
+</view>

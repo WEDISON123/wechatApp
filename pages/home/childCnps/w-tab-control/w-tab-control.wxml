@@ -1,0 +1,16 @@
+<!--pages/home/childCnps/w-tab-control/w-tab-control.wxml-->
+<view class="tab">
+  <view class="tab_item" bindtap="selectTab" data-tab="0">
+    <view class="{{tab == 0 ? 'tab_item-on' : ''}}">
+      热榜
+    </view>
+  </view>
+  <view class="tab_item" bindtap="selectTab" data-tab="1">
+    <view class="{{tab == 1 ? 'tab_item-on' : ''}}">
+    推荐
+    </view>
+  </view>
+</view>
+<scroll-view>
+  
+</scroll-view>

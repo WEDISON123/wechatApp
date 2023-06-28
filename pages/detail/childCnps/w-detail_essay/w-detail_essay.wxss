@@ -1,0 +1,41 @@
+/* pages/detail/childCnps/w-detail_essay/w-detail_essay.wxss */
+.detail-container {
+  background-color: #fafafa;
+}
+.detail {
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
+}
+.detail, .h {
+   /* height: 44.3vh; */
+}
+.detail_essay {
+  font-size: 18pt;
+  padding: 2vh 1vw;
+  margin-top: 6vh;
+}
+.detail_content {
+  font-size: 15pt;
+  padding: 1vh 2vw;
+}
+
+.detail_mess {
+  display: flex;
+}
+
+.detail_mess__follow {
+  padding: 2vh 5vw 4vh 4vw;
+  color: #606060;
+}
+
+.detail_mess__watch {
+  padding: 2vh 0 4vh 0vw;
+  color: #606060;
+}
+
+.space {
+  height: 3vh;
+  padding: 2vh 6vw;
+  font-weight: bold;
+}

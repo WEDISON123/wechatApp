@@ -1,0 +1,8 @@
+<!--components/w-essayrec-item/w-essayrec-item.wxml-->
+<view bindtap="itemClick">
+  <view class="essay_list__title">{{essayitem.title}}</view>
+  <view class="essay_list__content">
+    <view class="essay_list-content">{{essayitem.content}}</view>
+    <image src="{{essayitem.pic != 'null' ? essayitem.pic : ''}}" class="{{essayitem.pic != 'null' ? 'essay_list__img': '.essay_list__img-null'}}" mode=""/>
+  </view>
+</view>

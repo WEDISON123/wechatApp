@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/profile/profile",
+    "pages/logs/logs",
+    "pages/detail/content",
+    "pages/chat/chat"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "知乎",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "backgroundColor": "#ededed",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home-active.png"
+      },
+      {
+        "text": "消息",
+        "pagePath": "pages/chat/chat",
+        "iconPath": "./images/chat.png",
+        "selectedIconPath": "./images/chat-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/profile/profile",
+        "iconPath": "./images/me.png",
+        "selectedIconPath": "./images/me-active.png"
+      }
+    ],
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+  }
+}

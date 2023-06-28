@@ -1,0 +1,4 @@
+<!--pages/home/childCnps/w-essayhot/w-essayhot.wxml-->
+<view class="essay_list" wx:for="{{essay}}" wx:key="id">
+  <w-essay-item essayitem="{{item}}"></w-essay-item>
+</view>

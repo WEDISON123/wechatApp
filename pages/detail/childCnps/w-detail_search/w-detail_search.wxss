@@ -1,0 +1,30 @@
+/* pages/detail/childCnps/w-detail_search/w-detail_search.wxss */
+.search-container {
+  background-color: #ffffff;
+  width: 100vw;
+}
+
+.back_icon {
+  border: 1px solid #929399;
+  border-radius: 16px;
+  display: flex;
+}
+.toBack, .toHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toBack image, .toHome image{
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+}
+.search-input input {
+  background-color: #f7f8fa;
+  border-radius: 16px;
+  text-align: center;
+}

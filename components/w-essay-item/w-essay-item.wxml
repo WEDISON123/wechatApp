@@ -1,0 +1,11 @@
+<!--components/w-essay-item/w-essay-item.wxml-->
+<view bindtap="itemClick">  
+  <view class="essay_list__heat">
+    <view class="essay_list__heat-ida {{essayitem.id > 3 ? 'essay_list__heat-idb': ''}}">{{essayitem.id}}</view>
+    <view class="essay_list__heat-h">{{essayitem.heat}} 万热度</view>
+  </view>
+  <viem class="essay_list__title">
+    <view class="essay_list__title-t">{{essayitem.title}}</view>
+    <image src="{{essayitem.pic}}" mode=""/>
+  </viem>
+</view>

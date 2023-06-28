@@ -1,0 +1,4 @@
+/* pages/home/childCnps/w-essayhot/w-essayhot.wxss */
+.essay_list {
+  height: 18vh;
+}

@@ -1,0 +1,159 @@
+/* pages/profile/profile.wxss */
+.page {
+  height: 100vh;
+  background-color: #ffffff;
+}
+.navigation {
+  background-color: #f6f6f6;
+}
+
+.agreement {
+  background-color: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 20px;
+}
+.agreement_img {
+  background-color: #ffffff;
+}
+.agreement_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.user {
+  height: 25%;
+  background-color: #f6f6f6;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.space {
+  height: 0.8%;
+  background-color: #f6f6f6;
+}
+
+.problem {
+  height: 18%;
+}
+.problem_nomal {
+  font-size: 16pt;
+  padding: 1.5vh 2vh;
+}
+.problem_a, .problem_b {
+  padding: 0.5vh 2vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.problem_img {
+  height: 5vh;
+  width: 5vh;
+  position: absolute;
+  right: 1vw;
+}
+.problem_img image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -0.5vh;
+}
+.problem_a__title, .problem_b__title {
+  font-size: 13pt;
+}
+.problem_content {
+  padding: 1vh 1vh;
+}
+.problem_none {
+  display: none;
+}
+
+.cs {
+  height: 6.4%;
+  display: flex;
+  align-items: center;
+}
+.cs_title {
+  font-size: 16pt;
+  padding: 1vh 2vh;
+}
+.cs_img {
+  height: 5vh;
+  width: 5vh;
+  position: absolute;
+  right: 1.5vw;
+}
+.cs_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.history {
+  height: 49%;
+}
+.history_recent {
+  font-size: 16pt;
+  margin: 1vh;
+}
+.history .loadIn {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.loadIn_title {
+  font-size: 14pt;
+  padding: 3vh 3vh;
+}
+.loadIn_bt {
+  color: #ffffff;
+  background-color: #1ab018;
+}
+.loadIn_none {
+  display: none;
+}
+
+.my{
+  margin: 15rpx 0 0 0;
+  border-top: solid 1px #ebebeb;
+  border-bottom: solid 2px #ebebeb;
+}
+.my .my-item{
+  width: 95vw;
+  background: #ffffff;
+  padding: 0 2vw;
+  display: flex;
+}
+.my .my-item .myitem-icon{
+  flex: 1;
+}
+.my .my-item .myitem-icon image{
+  width: 45rpx;
+  height: 45rpx;
+  padding: 37.5rpx 0;
+}
+.my .my-item .myitem-name{
+  flex: 8;
+  text-align: left;
+  font-size: 34rpx;
+  color: #6d6d6d;
+  line-height: 60rpx;
+  padding: 30rpx 0;
+  border-bottom: solid 1px #ebebeb;
+}
+.my .my-item:last-child .myitem-name{
+  border-bottom: none;
+}

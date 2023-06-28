@@ -1,0 +1,22 @@
+/* pages/home/home.wxss */
+.page {
+  height: 100vh;
+}
+
+.essay_hd {
+  height: 6%;
+  background-color: #ffffff;
+}
+.essay_bd {
+  height: 94%;
+  position: relative;
+  bottom: 0;
+}
+
+.essay_bd__space{
+  height: 1%;
+}
+.essay_bd__swiper {
+    height: 99%;
+    background-color: #ffffff;
+}
